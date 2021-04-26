@@ -1,0 +1,253 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        display: grid;
+        grid-gap: 15px;
+        margin: 0 10px;
+    }
+    .wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .flex-content {
+        display: flex;
+        width: 100%;
+        height: 49%;
+    }
+    .full-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        display: grid;
+        grid-gap: 15px;
+        margin: 0 10px;
+    }
+    .wrapper {
+        /* height: 86vh; */
+        overflow-y: auto;
+        padding: 20px 0;
+        /* position: relative; */
+        z-index: 200;
+    }
+    .wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .flex-content {
+        display: flex;
+        width: 100%;
+        height: 49%;
+    }
+    .full-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+        margin: 0 10px;
+    }
+    .full-center {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .wrapper {
+        /* height: 86vh; */
+        overflow-y: auto;
+        padding: 20px 0;
+        /* position: relative; */
+        z-index: 200;
+    }
+    .wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .flex-content {
+        display: flex;
+        width: 100%;
+        /* height: 49%; */
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+        margin: 0 10px;
+    }
+    .full-center {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .wrapper {
+        /* height: 86vh; */
+        overflow-y: auto;
+        padding: 20px 0;
+        /* position: relative; */
+        z-index: 200;
+    }
+    .wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .flex-content {
+        display: flex;
+        width: 100%;
+        /* height: 49%; */
+    }
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+        margin: 0 10px;
+    }
+    .full-center {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .wrapper {
+        /* height: 86vh; */
+        overflow-y: auto;
+        padding: 20px 0;
+        /* position: relative; */
+        z-index: 200;
+    }
+    .wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .flex-content {
+        display: flex;
+        width: 100%;
+        /* height: 49%; */
+    }
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 1px) and (max-width: 480px) {
+    /* CSS */
+    .grid-1,
+    .grid-2,
+    .grid-3 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+        margin: 0 10px;
+    }
+    .full-center {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .wrapper {
+        /* height: 86vh; */
+        overflow-y: auto;
+        padding: 20px 0;
+        /* position: relative; */
+        z-index: 200;
+    }
+    .wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .flex-content {
+        display: flex;
+        width: 100%;
+        /* height: 49%; */
+    }
+}

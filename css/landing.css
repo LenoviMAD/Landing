@@ -1,0 +1,103 @@
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/test.jpg');
+    background-size: cover;
+}
+
+
+/* .wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+
+.grid-1,
+.grid-2,
+.grid-3 {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    margin: 0 10px;
+}
+
+.full-center {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.wrapper {
+    /* height: 86vh; */
+    overflow-y: auto;   
+    padding: 20px 0;
+    /* position: relative; */
+    z-index: 200;
+    width: 100%;
+    margin: 0 auto;
+    /* justify-content: center; */
+}
+
+.flex-content {
+    display: flex;
+    width: 100%;
+    /* height: 49%; */
+}
+
+.downloadApp {
+    display: flex;
+    width: 80%;
+}
+.wrapper header,
+#mainMenu {
+    z-index: 50;
+}
+
+.wrapper.full-center.bg-img .title__download {
+    color: white;
+}
+
+.wrapper.full-center.bg-img .input-field input[type=text],
+.wrapper.full-center.bg-img .input-field input[type=password],
+.wrapper.full-center.bg-img .input-field input[type=email],
+.wrapper.full-center.bg-img .input-field input[type=url],
+.wrapper.full-center.bg-img .input-field input[type=time],
+.wrapper.full-center.bg-img .input-field input[type=date],
+.wrapper.full-center.bg-img .input-field input[type=datetime],
+.wrapper.full-center.bg-img .input-field input[type=datetime-local],
+.wrapper.full-center.bg-img .input-field input[type=tel],
+.wrapper.full-center.bg-img .input-field input[type=number] {
+    border-bottom-color: white;
+}
+
+.wrapper.full-center.bg-img .input-field>label {
+    color: white;
+}
+
+.wrapper.full-center.bg-img .input-field .helper-text {
+    color: white;
+}
+
+body {
+    max-width: initial;
+    margin: initial;
+}
+
+.btn-Download {
+    transition: transform .2s ease-out;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    display: inline-block;
+    padding: 0 16px;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.btn-Download:hover {
+    transform: translateY(-3px);
+}
