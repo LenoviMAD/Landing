@@ -36,7 +36,7 @@ export default function init() {
                 modal.closeModal('loader')
 
                 if (res.code === "0000") {
-                    console.log(res.code);
+                    //console.log(res.code);
                     window.location.href = "downloadPage.php";
                 } else {
                     modal.openModal("modalDanger", 'Datos incompletos', res.message)

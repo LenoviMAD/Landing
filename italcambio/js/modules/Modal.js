@@ -43,11 +43,34 @@ export default class Modal {
             })
         }
     }
-    openModal = (idmodal, title = "", message = "") => {
+    openModal = (idmodal, title = "", message = "", closeout = true, customHidden = false) => {
         const miModal = document.getElementById(idmodal)
-        if (title && message) {
+
+        // Seteando boton regresar o index
+        let custom1 = document.querySelector(`#modalSuccess footer button`)
+        let custom2 = document.querySelector(`#modalSuccess footer a`)
+
+        if (custom1 && custom2) {
+            if (!custom1.classList.contains('hidden')) {
+                custom1.classList.add('hidden')
+            }
+            if (custom2.classList.contains('hidden')) {
+                custom2.classList.remove('hidden')
+            }
+        }
+
+        // Cerrando modales por fuera y con esc
+        if (closeout) {
+            this.closeOut()
+        }
+
+        if (title || message) {
             document.querySelector(`#${miModal.getAttribute('id')} .modal__title`).innerHTML = title
             document.querySelector(`#${miModal.getAttribute('id')} .modal__text`).innerHTML = message
+        }
+        if (customHidden) {
+            custom1.classList.remove('hidden')
+            custom2.classList.add('hidden')
         }
         if (miModal) {
             miModal.classList.add('is-visible')

@@ -1156,7 +1156,7 @@ class xpresentationLayer
 	static function buildButtonImageLanding()
 	{
 		echo '<DIV class="grid-item-2 text-center">';
-		echo '<BUTTON class="btn btn-large btn-semirounded" id="sendButtom">Descargar</BUTTON>';
+		echo '<BUTTON class="btn btn-large btn-semirounded" id="sendButtom">REGISTRAR</BUTTON>';
 		echo '</DIV>';
 		echo '<DIV class="grid-item-2 text-center">';
 		echo '        <FIGURE class="icon-phone">';
@@ -1175,7 +1175,6 @@ class xpresentationLayer
 	===================================================================== */
 	static function buildDownloadSectionLanding()
 	{
-
 		echo '<HEADER class="text-center">';
 		echo '<FIGURE>';
 		echo '        <img class="logo" src="img/logo.png">';
