@@ -330,11 +330,6 @@ select {
     height: 25px;
     text-align: right;
 }
-
-.logo {
-    height: 100%;
-}
-
 .grid-1,
 .grid-2,
 .grid-3 {
@@ -510,17 +505,6 @@ input[type=number] {
 img {
     max-width: 100%;
 }
-
-body {
-    /* max-width: 700px;
-    margin: 0 auto;
-    background: #393939; */
-    /* border-right: 8px solid #c7c7c7;
-    border-left: 8px solid #c7c7c7; */
-    /* border-radius: 5px;
-    box-shadow: 0 19px 2px 0 rgb(0 0 0 / 14%), 0 5px 28px 7px rgb(0 0 0 / 12%); */
-}
-
 .icon-phone {
     height: 460PX;
 }
@@ -537,8 +521,8 @@ body {
 
 
 /* Marco de telefono 2 */
-.container-phone {
-}
+/* .container-phone {
+} */
 
 body {
     background: #f5f5f5;

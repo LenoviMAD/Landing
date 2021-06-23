@@ -1160,7 +1160,7 @@ class xpresentationLayer
 		echo '</DIV>';
 		echo '<DIV class="grid-item-2 text-center">';
 		echo '        <FIGURE class="icon-phone">';
-		echo '                <IMG src="./img/testing.png" alt="funcionalidades">';
+		echo '                <IMG src="./img/app.png" alt="funcionalidades">';
 		echo '        </FIGURE>';
 		echo '</DIV>';
 	} //buildButtonImageLanding
